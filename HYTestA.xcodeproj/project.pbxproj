@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D599731F161E4700BA721E /* HYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D599721F161E4700BA721E /* HYAnimationView.m */; };
+		64DD24CA1F1F29770015D40B /* HYGyroTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DD24C91F1F29770015D40B /* HYGyroTool.m */; };
 		64E4CCAF1F1619BB00F4E921 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E4CCAE1F1619BB00F4E921 /* main.m */; };
 		64E4CCB21F1619BB00F4E921 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E4CCB11F1619BB00F4E921 /* AppDelegate.m */; };
 		64E4CCB51F1619BB00F4E921 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E4CCB41F1619BB00F4E921 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64D599711F161E4700BA721E /* HYAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYAnimationView.h; sourceTree = "<group>"; };
+		64D599721F161E4700BA721E /* HYAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYAnimationView.m; sourceTree = "<group>"; };
+		64DD24C81F1F29770015D40B /* HYGyroTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYGyroTool.h; sourceTree = "<group>"; };
+		64DD24C91F1F29770015D40B /* HYGyroTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYGyroTool.m; sourceTree = "<group>"; };
 		64E4CCAA1F1619BB00F4E921 /* HYTestA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYTestA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E4CCAE1F1619BB00F4E921 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64E4CCB01F1619BB00F4E921 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		64E4CCAC1F1619BB00F4E921 /* HYTestA */ = {
 			isa = PBXGroup;
 			children = (
+				64E4CCE31F1619DA00F4E921 /* HYPhysicsAnimation */,
 				64E4CCB01F1619BB00F4E921 /* AppDelegate.h */,
 				64E4CCB11F1619BB00F4E921 /* AppDelegate.m */,
 				64E4CCB31F1619BB00F4E921 /* ViewController.h */,
@@ -141,6 +148,17 @@
 				64E4CCD71F1619BB00F4E921 /* Info.plist */,
 			);
 			path = HYTestAUITests;
+			sourceTree = "<group>";
+		};
+		64E4CCE31F1619DA00F4E921 /* HYPhysicsAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				64D599711F161E4700BA721E /* HYAnimationView.h */,
+				64D599721F161E4700BA721E /* HYAnimationView.m */,
+				64DD24C81F1F29770015D40B /* HYGyroTool.h */,
+				64DD24C91F1F29770015D40B /* HYGyroTool.m */,
+			);
+			path = HYPhysicsAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +228,6 @@
 				TargetAttributes = {
 					64E4CCA91F1619BB00F4E921 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HL7PY75DSE;
 						ProvisioningStyle = Automatic;
 					};
 					64E4CCC51F1619BB00F4E921 = {
@@ -279,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D599731F161E4700BA721E /* HYAnimationView.m in Sources */,
 				64E4CCB51F1619BB00F4E921 /* ViewController.m in Sources */,
 				64E4CCB21F1619BB00F4E921 /* AppDelegate.m in Sources */,
+				64DD24CA1F1F29770015D40B /* HYGyroTool.m in Sources */,
 				64E4CCBB1F1619BB00F4E921 /* HYTestA.xcdatamodeld in Sources */,
 				64E4CCAF1F1619BB00F4E921 /* main.m in Sources */,
 			);
@@ -431,10 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HL7PY75DSE;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HYTestA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = haixianfglicai.HYTestA;
+				PRODUCT_BUNDLE_IDENTIFIER = "hx-gepeng";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,10 +462,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HL7PY75DSE;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HYTestA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = haixianfglicai.HYTestA;
+				PRODUCT_BUNDLE_IDENTIFIER = "hx-gepeng";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -520,6 +539,7 @@
 				64E4CCDC1F1619BB00F4E921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64E4CCDD1F1619BB00F4E921 /* Build configuration list for PBXNativeTarget "HYTestATests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +548,7 @@
 				64E4CCDF1F1619BB00F4E921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64E4CCE01F1619BB00F4E921 /* Build configuration list for PBXNativeTarget "HYTestAUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +557,7 @@
 				64E4CCE21F1619BB00F4E921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

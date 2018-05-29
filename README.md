@@ -1,11 +1,11 @@
 # GravityBall
 实现仿真重力效果
 
-HYGyroTool // 负责获取重力坐标 x/y/z轴
+1 - HYGyroTool // 负责获取重力坐标 x/y/z轴
            // It is responsible for obtaining the gravity coordinate x/y/z axis.
            
-HYAnimationView // 动画展示View   
-                // It is responsible for showing the animation effect
+2 - HYAnimationView // 动画展示View   
+                    // It is responsible for showing the animation effect
                 
 # 代码 
 ```objc

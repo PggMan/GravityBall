@@ -7,7 +7,8 @@ HYGyroTool // 负责获取重力坐标 x/y/z轴
 HYAnimationView // 动画展示View   
                 // It is responsible for showing the animation effect
                 
-# 代码     
+# 代码 
+```objc
 // 1
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,3 +35,4 @@ HYAnimationView // 动画展示View
     }];
     
 }
+```
